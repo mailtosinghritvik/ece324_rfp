@@ -1,0 +1,74 @@
+# Ignore everything
+*
+
+# But not these files/directories
+!.gitignore
+!frontend/
+!backend/
+!requirements.txt
+!README.md
+
+# Ignore virtual environments even in allowed directories
+openai-env/
+venv/
+env/
+**/openai-env/
+**/venv/
+**/env/
+
+# Ignore Python cache files
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+
+# Ignore large data files that might be in frontend or backend
+**/*.csv
+**/*.sqlite
+**/*.db
+**/*.h5
+**/*.hdf5
+**/*.pickle
+**/*.pkl
+
+# Ignore IDE specific files
+**/.vscode/
+**/.idea/
+**/*.swp
+**/*.swo
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Environment variables
+.env
+.env.local
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+.spyderproject
+.spyproject
+.ropeproject
+
+# Operating System
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+
+# Jupyter Notebook
+.ipynb_checkpoints 
